@@ -201,9 +201,16 @@ header input {
   padding: 1px 10px;
 }
 
+#flexi-code.view-code,
+#header-code.view-code {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 700px) {
   #component-container {
-    height: 775px;
+    align-items: flex-start;    
+    height: 435px;
+    margin-top: 0; 
   }
 
   .card {
@@ -228,6 +235,12 @@ header input {
 }
 
 @media (max-width: 450px) {
+  #component-container {
+    align-items: flex-start;    
+    height: 435px;
+    margin-top: 0;     
+  }
+
   .card,
   #tab-container {
     margin: auto;
