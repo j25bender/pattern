@@ -11,7 +11,7 @@
 }
 
 .image {
-  width: 200px;
+  min-width: 200px;
   height: 225px;
   background-color: gray;
   align-self: flex-start;
@@ -24,26 +24,25 @@
   display: flex;
   flex-flow: row wrap;
   width: 70vw;
+  height: 50px;
 }
 
 .tab {
-  background-color: ghostwhite;
+  background-color: rgb(222, 224, 226);
   flex-grow: 1;
   text-align: center;
-  padding: 5px 60px;
+  padding: 15px 60px;
 }
 
 .tab:hover {
   color: gray;
   background-color: lightgrey;
   transition: 1s;
-  border-bottom: 1.5px solid gray;
   padding-bottom: 1.5px;
 }
 
 .tab:active {
   background-color: gray;
-  border-bottom: 1.5px solid ghostwhite;  
   color: ghostwhite;
   opacity: 0.75;
 }
@@ -57,9 +56,8 @@
   height: 275px;
   overflow: scroll;
   position: absolute;
-  text-align: center;
+  text-align: left;
   width: 70vw;
-  margin: auto;
 }
 
 .card h3 {
@@ -79,7 +77,6 @@ p {
 
 .activeTab {
   background-color:ghostwhite;
-  border-bottom: 1.5px solid gray;
   color: black;
   flex-grow: 2;
   padding-bottom: 1.5px;
@@ -116,8 +113,9 @@ hr {
 .card-div {
   width: 31.5%;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid #DADADF;
   margin: 10px;
+  background-color: #DADADF;
 }
 
 #div1,
@@ -129,4 +127,12 @@ hr {
 #div4,
 #div5 {
   margin: 9px;
+}
+
+.card-div h4 {
+  background-color: ghostwhite;
+  height: 55px;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 20px;
 }
