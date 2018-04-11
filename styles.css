@@ -3,19 +3,19 @@
 #component-container {
   align-items: center;
   display: flex;
+  font-family: 'Fjalla One', sans-serif;  
   height: 500px;
   justify-content: center;
-  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 1px;
   min-width: 230px;
 }
 
 .image {
-  min-width: 208px;
-  height: 225px;
-  background-color: gray;
   align-self: flex-start;
+  background-color: gray;  
+  height: 225px;
   margin: 20px;
+  min-width: 208px;  
   opacity: .25;
 }
 
@@ -29,15 +29,15 @@
 .tab {
   background-color: rgb(222, 224, 226);
   flex-grow: 1;
-  text-align: center;
   padding: 15px 60px;
+  text-align: center;  
 }
 
 .tab:hover {
+  background-color: lightgrey;  
   color: gray;
-  background-color: lightgrey;
-  transition: 1s;
   padding-bottom: 1.5px;
+  transition: 1s;  
 }
 
 .tab:active {
@@ -47,11 +47,11 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: row;
-  color: black;
   background-color: ghostwhite;
   box-shadow: 2.5px 2.5px 5px lightgrey;
+  color: black;  
+  display: flex;
+  flex-direction: row;
   height: 275px;
   overflow: scroll;
   position: absolute;
@@ -87,27 +87,27 @@ p {
 }
 
 .activeCard {
+  background-color: ghostwhite;  
   color: black;
   transition: color 2s;
-  background-color: ghostwhite;
   z-index: 2;
 }
 
 .view-code {
   border: 1px solid lightgrey;
   font-family: 'Fjalla One', sans-serif;
-  padding-top: 25px;  
   height: 45px;
-  width: 270px;
-  text-align: center;
   margin: auto;
   margin-top: 20px;
+  padding-top: 25px;
+  text-align: center;  
+  width: 270px;  
 }
 
 .active-view {
   height: fit-content;
+  overflow-y: scroll;  
   width: 100%;
-  overflow-y: scroll;
 }
 
 #accordian-code {
@@ -123,20 +123,20 @@ hr {
 }
 
 #flexi-card-container {
+  display: flex;  
   height: fit-content;
-  display: flex;
-  width: 80%;
-  margin: auto;
   flex-flow: row wrap;
+  margin: auto;  
+  width: 80%;  
 }
 
 .card-div {
-  width: 31.5%;
-  min-width: 245px;
-  height: 300px;
+  background-color: #DADADF;  
   border: 1px solid #DADADF;
+  height: 300px;  
   margin: 10px;
-  background-color: #DADADF;
+  min-width: 245px;  
+  width: 31.5%;  
 }
 
 #div1,
@@ -159,14 +159,14 @@ hr {
 }
 
 header {
+  align-items: center;  
   background-color: #DADADF;
+  border: 1px solid black;  
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  border: 1px solid black;
   margin: auto;
+  width: 80%;  
 }
 
 header h4 {
@@ -178,18 +178,18 @@ header h4 {
   background-color: ghostwhite;
   border-radius: 100%;
   border: 1px solid black;
-  width: 55px;
   height: 55px;
   margin: 15px;
+  width: 55px;  
 }
 
 header input {
-  height: 25px;
-  width: 260px;
   background-color: white;
   background-image: url('./assets/magnifyingglass.png');
   background-repeat: no-repeat;
+  height: 25px;
   margin-right: 25px;
+  width: 260px;  
 }
 
 #circle h4 {
@@ -202,19 +202,19 @@ header input {
   }
 
   .card {
+    align-content: center;    
     display: flex;
     height: 415px;
     justify-content: center;
-    align-content: center;
     flex-direction: column;
     text-align: center;
     margin: auto;    
   }
 
   .card .image {
-    width: 208px;
     height: 225px;
     margin: auto;
+    width: 208px;    
   }
 
   #accordian-code {
@@ -224,10 +224,13 @@ header input {
 
 @media (max-width: 450px) {
   .card,
-  #tab-container,
+  #tab-container {
+    margin: auto;
+    width: 100vw;    
+  }
+
   .card-div {
     width: 100vw;
-    margin: auto;
   }
 
   header {
@@ -236,8 +239,8 @@ header input {
   }
 
   header input {
-    width: 90%;
     margin: auto;
+    width: 90%;    
   }
 
   #accordian-code {
