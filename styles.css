@@ -99,13 +99,18 @@ p {
   height: 45px;
   margin: auto;
   margin-top: 20px;
+  overflow-y: hidden;
   padding-top: 25px;
   text-align: center;  
-  width: 270px;  
+  width: 270px;
+}
+
+.view-code img {
+  padding-top: 25px;
 }
 
 .active-view {
-  height: fit-content;
+  height: 300px;
   overflow-y: scroll;  
   width: 100%;
 }
