@@ -11,7 +11,7 @@
 }
 
 .image {
-  min-width: 200px;
+  min-width: 208px;
   height: 225px;
   background-color: gray;
   align-self: flex-start;
@@ -24,7 +24,6 @@
   display: flex;
   flex-flow: row wrap;
   width: 70vw;
-  height: 50px;
 }
 
 .tab {
@@ -94,6 +93,26 @@ p {
   z-index: 2;
 }
 
+.view-code {
+  border: 1px solid lightgrey;
+  font-family: 'Fjalla One', sans-serif;
+  padding-top: 25px;  
+  height: 45px;
+  width: 270px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.active-view {
+  height: fit-content;
+  width: 100%;
+}
+
+#accordian-code {
+  margin-top: 100px;
+}
+
 #new-section {
   margin-top: 150px;
 }
@@ -112,6 +131,7 @@ hr {
 
 .card-div {
   width: 31.5%;
+  min-width: 245px;
   height: 300px;
   border: 1px solid #DADADF;
   margin: 10px;
@@ -135,4 +155,91 @@ hr {
   margin-top: 0;
   padding-top: 30px;
   padding-left: 20px;
+}
+
+header {
+  background-color: #DADADF;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+header h4 {
+  text-align: center;
+  margin-right: 10px;
+}
+
+#circle {
+  background-color: ghostwhite;
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 55px;
+  height: 55px;
+  margin: 15px;
+}
+
+header input {
+  height: 25px;
+  width: 260px;
+  background-color: white;
+  background-image: url('./assets/magnifyingglass.png');
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+
+#circle h4 {
+  padding: 1px 10px;
+}
+
+@media (max-width: 700px) {
+  #component-container {
+    height: 775px;
+  }
+
+  .card {
+    display: flex;
+    height: 415px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;    
+  }
+
+  .card .image {
+    width: 208px;
+    height: 225px;
+    margin: auto;
+  }
+
+  #accordian-code {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card,
+  #tab-container,
+  .card-div {
+    width: 100vw;
+    margin: auto;
+  }
+
+  header {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  header input {
+    width: 90%;
+    margin: auto;
+  }
+
+  #accordian-code {
+    margin-top: 170px;
+  }
 }

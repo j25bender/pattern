@@ -26,3 +26,21 @@ removeInitialActiveClass = () => {
     allCards[i].classList.remove('activeCard');
   }  
 }
+
+const clicked = (e) => {
+  const recipeTarget = e.target
+  const targetArticle = recipeTarget.closest('article')
+  if(targetArticle.className.includes('active-recipe')) {
+    targetArticle.classList.remove('active-recipe')
+  } else {
+    targetArticle.classList.add('active-recipe')      
+  }
+}
+
+showCode = (element) => {
+  if(element.className.includes('active-view')) {
+    element.classList.remove('active-view')
+  } else {
+    element.classList.add('active-view')    
+  }
+}
