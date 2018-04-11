@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
+body {
+  font-family: 'Fjalla One', sans-serif;  
+  margin: 0;
+}
+
+#banner {
+  background-color: rgb(40, 35, 82);
+  display: flex;
+  font-size: 20px;
+  letter-spacing: 2px;
+  justify-content: space-between;
+  height: 25px;
+  padding: 20px;
+  position: fixed;
+  width: 100vw;
+  z-index: 3; 
+}
+
+#pattern {
+  color: ghostwhite;
+}
+
+#span1 {
+  color: teal;
+}
+
+#span2 {
+  color: ghostwhite;
+  margin-right: 45px;
+}
+
 #component-container {
   align-items: center;
   display: flex;
@@ -95,7 +126,8 @@ p {
 
 .view-code {
   border: 1px solid lightgrey;
-  font-family: 'Fjalla One', sans-serif;
+  background-color: rgb(40, 35, 82);
+  color: ghostwhite;
   height: 45px;
   margin: auto;
   margin-top: 20px;
@@ -210,7 +242,11 @@ header input {
   #component-container {
     align-items: flex-start;    
     height: 435px;
-    margin-top: 0; 
+    margin-top: 0px; 
+  }
+
+  #tab-container {
+    padding-top: 65px;    
   }
 
   .card {
@@ -244,6 +280,7 @@ header input {
   .card,
   #tab-container {
     margin: auto;
+    padding-top: 65px;
     width: 100vw;    
   }
 
