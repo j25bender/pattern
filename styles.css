@@ -107,6 +107,7 @@ p {
 .active-view {
   height: fit-content;
   width: 100%;
+  overflow-y: scroll;
 }
 
 #accordian-code {
