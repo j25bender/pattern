@@ -32,6 +32,7 @@ showCode = (element) => {
     element.classList.remove('active-view')
     element.scrollTo({
       top: 0,
+      left: 0,
       behavior: 'smooth'
     })
   } else {
