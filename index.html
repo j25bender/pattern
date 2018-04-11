@@ -11,40 +11,87 @@
       <div id="card-container">
         
         <div id="tab-container">
-          <div class="first tab">First</div>
-          <div class="second tab">Second</div>
-          <div class="third tab">Third</div>
-          <div class="fourth tab">Fourth</div>
-          <div class="fifth tab">Fifth</div>
+          <div class="first tab">Tab 1</div>
+          <div class="second tab">Tab 2</div>
+          <div class="third tab">Tab 3</div>
+          <div class="fourth tab">Tab 4</div>
+          <div class="fifth tab">Tab 5</div>
         </div>
         
         <div class="first card">
-          <h3>The first wealth is health.
-          <p>Ralph Waldo Emerson</p></h3>
+          <div class="image"></div>
+          <div class="card-text">        
+            <h4>The first wealth is health.</h4>
+            <hr>
+            <p>Ralph Waldo Emerson</p>
+          </div>  
         </div>
         
         <div class="second card">
-          <h3>We all have big changes in our lives that are more or less a second chance.
-          <p>Harrison Ford</p></h3>
+          <div class="image"></div>   
+          <div class="card-text">                      
+            <h4>We all have big changes in our lives that are more or less a second chance.</h4>
+            <hr>
+            <p>Harrison Ford</p>
+          </div>
         </div>
         
         <div class="third card">
-          <h3>Some people are born on third base and go through life thinking they hit a triple.
-          <p>Barry Switzer</p></h3>
+          <div class="image"></div> 
+          <div class="card-text">                                    
+            <h4>Some people are born on third base and go through life thinking they hit a triple.</h4>
+            <hr>
+            <p>Barry Switzer</p>
+          </div> 
         </div>
         
         <div class="fourth card">
-          <h3>The first draught serveth for health, the second for pleasure, the third for shame, and the fourth for madness.
-          <p>Anacharsis</p></h3>
+          <div class="image"></div>
+          <div class="card-text">                                    
+            <h4>The first draught serveth for health, the second for pleasure, the third for shame, and the fourth for madness.</h4>
+            <hr>
+            <p>Anacharsis</p>
+          </div>  
         </div>
         
         <div class="fifth card">
-          <h3>Cryptocurrencies will create a fifth protocol layer powering the next generation of the Internet.
-          <p>Naval Ravikant</p></h3>
+          <div class="image"></div>
+          <div class="card-text">                                    
+            <h4>Cryptocurrencies will create a fifth protocol layer powering the next generation of the Internet.</h4>
+            <hr>
+            <p>Naval Ravikant</p>
+          </div>
         </div>
       </div>
-      
     </div>
+    <div class="view-code" onclick={showCode(this)} id="accordian-code">View Accordian Code<a href="./styles.css"></a></div>    
+
+    <h4 id="new-section">FLEXIBLE CARDS</h4>
+    <hr>
+    <section id="flexi-card-container">
+      <div id="div1" class="card-div"><h4>Veniam, quis nostrud exercita</h4></div>
+      <div id="div2" class="card-div"><h4>Ullamco laboris nisi</h4></div>
+      <div id="div3" class="card-div"><h4>Ut aliquip ex ea commodo</h4></div>
+      <div id="div4" class="card-div"><h4>Consequat. Duis aute irure</h4></div>
+      <div id="div5" class="card-div"><h4>Dolor in reprehenderit</h4></div>
+      <div id="div6" class="card-div"><h4>In voluptate velit esse</h4></div>
+      <div id="div7" class="card-div"><h4>Cillum dolore eu fugiat</h4></div>
+    </section>
+    <div class="view-code" onclick={showCode(this)} id="flexi-code">View FlexiCard Code</div>      
+    
+
+      <div id="header-container">
+        <h4 id="header-container">HEADER</h4>
+        <hr>
+        <header>
+          <div id="circle"></div>
+          <h4>Navigation Link 1</h4>
+          <h4>Navigation Link 2</h4>
+          <h4>Navigation Link 3</h4>
+          <input type="text" alt="Search" placeholder="           SEARCH">
+        </header>
+        <div class="view-code" onclick={showCode(this)} id="header-code">View Header Code</div>      
+      </div>
     <script src="./script.js"></script>
   </body>
 </html>

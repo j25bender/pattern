@@ -3,11 +3,20 @@
 #component-container {
   align-items: center;
   display: flex;
-  height: 50vh;
+  font-family: 'Fjalla One', sans-serif;  
+  height: 500px;
   justify-content: center;
-  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 1px;
   min-width: 230px;
+}
+
+.image {
+  align-self: flex-start;
+  background-color: gray;  
+  height: 225px;
+  margin: 20px;
+  min-width: 208px;  
+  opacity: .25;
 }
 
 #tab-container {
@@ -18,44 +27,46 @@
 }
 
 .tab {
-  background-color: ghostwhite;
+  background-color: rgb(222, 224, 226);
   flex-grow: 1;
-  text-align: center;
-  padding: 5px 60px;
+  padding: 15px 60px;
+  text-align: center;  
 }
 
 .tab:hover {
-  color: #EEBF92;
-  background-color: #7A7978;
-  transition: 1s;
-  border-bottom: 1.5px solid #F29A48;
+  background-color: lightgrey;  
+  color: gray;
   padding-bottom: 1.5px;
+  transition: 1s;  
 }
 
 .tab:active {
-  background-color: #000;
-  color: #F29A48;
+  background-color: gray;
+  color: ghostwhite;
   opacity: 0.75;
 }
 
 .card {
-  color: ghostwhite;
-  background-color: #000;
+  background-color: ghostwhite;
   box-shadow: 2.5px 2.5px 5px lightgrey;
-  height: 250px;
+  color: black;  
+  display: flex;
+  flex-direction: row;
+  height: 275px;
   overflow: scroll;
   position: absolute;
-  text-align: center;
+  text-align: left;
   width: 70vw;
 }
 
 .card h3 {
   padding-top: 65px;
   padding: 20px;
+  margin: auto;
 }
 
 p {
-  color: #F29A48;
+  color: darkgray;
   font-size: 14px;
 }
 
@@ -64,21 +75,175 @@ p {
 }
 
 .activeTab {
-  background-color: #000;
-  border-bottom: 1.5px solid #F29A48;
-  color: #F29A48;
+  background-color:ghostwhite;
+  color: black;
   flex-grow: 2;
   padding-bottom: 1.5px;
 }
 
 .activeTab:hover {
-  background-color: #000;
-  color: #F29A48;
+  background-color: ghostwhite;
+  color: black;
 }
 
 .activeCard {
-  color: #B3B3B3;
+  background-color: ghostwhite;  
+  color: black;
   transition: color 2s;
-  background-color: #070907;
   z-index: 2;
+}
+
+.view-code {
+  border: 1px solid lightgrey;
+  font-family: 'Fjalla One', sans-serif;
+  height: 45px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 25px;
+  text-align: center;  
+  width: 270px;  
+}
+
+.active-view {
+  height: fit-content;
+  overflow-y: scroll;  
+  width: 100%;
+}
+
+#accordian-code {
+  margin-top: 100px;
+}
+
+#new-section {
+  margin-top: 150px;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+#flexi-card-container {
+  display: flex;  
+  height: fit-content;
+  flex-flow: row wrap;
+  margin: auto;  
+  width: 80%;  
+}
+
+.card-div {
+  background-color: #DADADF;  
+  border: 1px solid #DADADF;
+  height: 300px;  
+  margin: 10px;
+  min-width: 245px;  
+  width: 31.5%;  
+}
+
+#div1,
+#div7 {
+ flex-grow: 2;
+}
+
+#div3,
+#div4,
+#div5 {
+  margin: 9px;
+}
+
+.card-div h4 {
+  background-color: ghostwhite;
+  height: 55px;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+header {
+  align-items: center;  
+  background-color: #DADADF;
+  border: 1px solid black;  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;  
+}
+
+header h4 {
+  text-align: center;
+  margin-right: 10px;
+}
+
+#circle {
+  background-color: ghostwhite;
+  border-radius: 100%;
+  border: 1px solid black;
+  height: 55px;
+  margin: 15px;
+  width: 55px;  
+}
+
+header input {
+  background-color: white;
+  background-image: url('./assets/magnifyingglass.png');
+  background-repeat: no-repeat;
+  height: 25px;
+  margin-right: 25px;
+  width: 260px;  
+}
+
+#circle h4 {
+  padding: 1px 10px;
+}
+
+@media (max-width: 700px) {
+  #component-container {
+    height: 775px;
+  }
+
+  .card {
+    align-content: center;    
+    display: flex;
+    height: 415px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;    
+  }
+
+  .card .image {
+    height: 225px;
+    margin: auto;
+    width: 208px;    
+  }
+
+  #accordian-code {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card,
+  #tab-container {
+    margin: auto;
+    width: 100vw;    
+  }
+
+  .card-div {
+    width: 100vw;
+  }
+
+  header {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  header input {
+    margin: auto;
+    width: 90%;    
+  }
+
+  #accordian-code {
+    margin-top: 170px;
+  }
 }
